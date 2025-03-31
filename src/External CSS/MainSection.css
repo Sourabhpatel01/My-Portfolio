@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Montserrat:wght@400;700&display=swap');
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10%;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Introduction Section */
+.intro {
+  max-width: 50%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.intro h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #ffcc00;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.intro h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.intro .highlight {
+  color: #ffcc00;
+}
+
+.intro p {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #f5f5f5;
+}
+
+/* Skills List */
+.skills {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.skills li {
+  font-size: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.skills li:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Call-to-Action Button */
+.btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #1e3c72;
+  padding: 14px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(63, 63, 62, 0.4);
+}
+
+.btn:hover {
+  background: #ffd633;
+  transform: scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 204, 0, 0.6);
+}
+
+/* Profile Image Styling */
+.profile-image {
+  position: relative;
+}
+
+.profile-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  animation: floatImage 3s infinite ease-in-out;
+}
+
+.profile-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Floating Animation */
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Smooth Fade-in Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
+    padding: 80px 5%;
+  }
+
+  .intro {
+    max-width: 100%;
+  }
+
+  .profile-image img {
+    width: 300px;
+    margin-top: 20px;
+  }
+}
