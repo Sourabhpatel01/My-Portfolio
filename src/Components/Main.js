@@ -35,7 +35,8 @@ export const Main = () => {
         transition={{ duration: 0.8 }}
         whileHover={{ scale: 1.05, rotate: 3 }}
       >
-        <img src="/sourabh.jpg" alt="Sourabh" className="animated-image" />
+ <img src={`${process.env.PUBLIC_URL}/sourabh.jpg`} alt="Sourabh" className="animated-image" />
+
       </motion.div>
     </section>
   );

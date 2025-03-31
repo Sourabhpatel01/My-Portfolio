@@ -21,7 +21,8 @@ const About = () => {
           transition={{ duration: 0.8 }}
           whileHover={{ scale: 1.05, rotate: 3 }}
         >
-          <img src="/sourabh.jpg" alt="Sourabh" className="profile-pic" />
+      
+          <img src={`${process.env.PUBLIC_URL}/sourabh.jpg`} alt="Sourabh" className="profile-pic" />
         </motion.div>
         
         <motion.div 
