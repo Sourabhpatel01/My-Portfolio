@@ -8,9 +8,9 @@ import Services from "./Components/Services";
 
 function App() {
   return (
-    <Router basename="My-Portfolio">
+    <Router basename="/My-Portfolio">
       <Navbar />
-      <Routes>
+      <Routes >
         <Route path="/" element={<Main />} />
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
